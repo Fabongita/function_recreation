@@ -7,3 +7,7 @@ new_string = ""
 for i in string_input:
     if leading_spaces and i.isspace():
         continue
+    else:
+        leading_spaces = False
+        new_string += i
+print(new_string)
