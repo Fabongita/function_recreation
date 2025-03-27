@@ -10,4 +10,8 @@ for char in string_input[::-1]:
         counter += 1
     else: 
         break
-if 
+# checks if the characters match
+if counter == len(end_string):
+    print(True)
+else: 
+    print(False)
