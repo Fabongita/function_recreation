@@ -6,9 +6,12 @@ def center_alignment(string_input, padding_character, character_number):
     return((total_left_padding*padding_character)+string_input+(total_right_padding*padding_character))
 # initialize variables for the string input, how much padding, and the number of characters
 string_input = input("Input a string: ")
-
 padding_character = input("Input the character for the padding, (input only one character, and blank for 1 space): ")
 character_number = int(input("input how many characters to use: "))
-
+#Add logical arguments for when the user inputs blanks and more than one characters
+if not padding_character:
+    padding_character = " "
+elif len(padding_character) > 1:
+     padding_character = padding_character[0]
 # Use a print statement to for the output
 print(center_alignment(string_input, padding_character, character_number))
