@@ -6,8 +6,11 @@ for char in string_input:
     if char.isupper():
         capital_converter = chr((ord(char)+32))
         new_string += capital_converter
-    else:
+    if char.islower():
         small_converter = chr((ord(char)-32))
         new_string += small_converter
+    else:
+        new_string += char
+# add print statement
 print(new_string)
 
