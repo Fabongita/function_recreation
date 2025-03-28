@@ -10,7 +10,7 @@ for char in string_input:
         new_string += chr((ord(char)-32))
     else:
         new_string += char
-
+        
 # add print statement
 print(new_string)
 
