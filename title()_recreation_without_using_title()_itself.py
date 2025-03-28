@@ -5,7 +5,18 @@ new_word = True
 
 # use a for loop?
 for char in string_input:
-    if char.isalpha() and :
+    if char.isalpha() and new_word:
+        string_results += char.upper()
+        new_word = False
+    elif char.isalpha() and not new_word:
+        string_results += char.lower()
+    else:
+        string_results += char
+        new_word = True
+
+
+        
 
 
 #add a print statement that shows the results
+print(string_results)
