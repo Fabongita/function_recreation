@@ -11,6 +11,10 @@ for char in string_input:
         continue
     else:
         new_string_input += char
-        
-print(new_string_input)
+# checks if 
+if counter == len(prefix):
+    print(new_string_input)
+else:
+    print(string_input)
+
 
