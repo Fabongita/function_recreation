@@ -10,4 +10,5 @@ for char in string_input[::-1]:
         trailing_spaces = False
         new_string += char
 # add a print statement for the result
-print(new_string)
+new_string = new_string[::-1]
+print(new_string,"HAHAHAH")
