@@ -2,13 +2,23 @@
 string_input = input("input anything: ")
 prefix = input("add a prefix to be removed: ")
 new_string_input = ""
+counter = 0
+mismatch = False
 
-#use an if statement to see if the string input starts with the prefix to be removed
-if string_input.startswith(prefix):
-    new_string_input = string_input[len(prefix):]  
+#use a for loop that iterates through the input which if the input and the prefix are equal then it will continue
+for char in string_input:
+    if counter < len(prefix):
+       if char == prefix[counter]:
+        counter += 1
+        continue
+       else:
+            mismatch = True
+            break
+# checks if the mismatch and
+if not mismatch and counter == len(prefix):
+    new_string_input = string_input[counter:]
+    print(new_string_input)
 else:
-    new_string_input = string_input  
-
-print(string_input)
+    print(string_input)
 
 
