@@ -4,7 +4,7 @@ checker = True
 
 # use for loop that breaks and turns the flag variable to false 
 for char in string_input:
-    if char.islower():
+    if char.islower() or not char.isalpha():
         checker = False
         break
     else:
